@@ -140,14 +140,19 @@ a {
 }
 
 .split-media {
-    width: auto;
+    width: 100%;
     overflow: hidden;
+    background-color: #ec0909;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .split-media img {
+    display: block;
     width: 100%;
+    height: auto;
     max-width: 100%;
-    height: 100%;
     object-fit: contain;
     background-color: #ec0909;
     margin-left: 0;
@@ -224,13 +229,14 @@ a {
     border: none;
     cursor: pointer;
     box-sizing: border-box;
-    transition: all 0.25s ease; 
+    transition: all 0.25s ease;
 }
 
 .btn:hover {
     transform: translateY(-4px);
-    background-color: #ff5a3a;   
+    background-color: #ff5a3a;
 }
+
 .note {
     background-color: #ec0909;
     color: #ffffff;
@@ -364,14 +370,74 @@ a {
     text-align: center;
 }
 
-@media screen and (min-width: 768px) {
+.about-video-section {
+    background-color: #efefef;
+    padding-top: 20px;
+    padding-bottom: 24px;
+}
+
+.about-video {
+    line-height: 0;
+    overflow: hidden;
+    background-color: #ec0909;
+}
+
+.about-video video {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.contact-info {
+    background-color: #efefef;
+    border-top: 4px solid #ec0909;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.contact-info-copy h2 {
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.contact-info-copy p {
+    margin: 0 0 6px 0;
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+.contact-form-section {
+    background-color: #ec0909;
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.contact-form-box {
+    padding-bottom: 22px;
+}
+
+.contact-form textarea {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    padding: 12px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    font-family: "Bree Serif", serif;
+}
+
+@media screen and (min-width: 1200px) {
     .header-grid {
-        padding-top: 14px;
-        padding-bottom: 14px;
+        padding-top: 16px;
+        padding-bottom: 16px;
     }
 
     .logo {
-        width: 82px;
+        width: 76px;
         margin: 0;
     }
 
@@ -389,7 +455,7 @@ a {
         display: flex;
         justify-content: flex-end;
         align-items: center;
-        gap: 32px;
+        gap: 44px;
     }
 
     .menu li {
@@ -398,240 +464,6 @@ a {
 
     .menu a {
         padding: 0;
-        font-size: 18px;
-    }
-
-    .hero img {
-        height: 520px;
-        object-fit: cover;
-    }
-
-    .intro {
-        padding-top: 26px;
-        padding-bottom: 30px;
-    }
-
-    .intro-logo {
-        width: 110px;
-        margin-bottom: 14px;
-    }
-
-    .intro h2 {
-        font-size: 38px;
-        margin-bottom: 10px;
-    }
-
-    .intro p {
-        font-size: 24px;
-    }
-
-    .section-title {
-        font-size: 34px;
-        padding: 28px 24px 20px 24px;
-    }
-
-    .split-media,
-    .split-copy {
-        height: 420px;
-    }
-
-    .split-copy {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: left;
-        padding: 28px 24px;
-    }
-
-    .split-copy p {
-        font-size: 14px;
-        margin-bottom: 18px;
-    }
-
-    .split-copy .btn {
-        margin: 0;
-        width: fit-content;
-    }
-
-    .split-left .split-media {
-        margin-left: calc(-50vw + 50%);
-        margin-right: 0;
-        width: calc(100% + (50vw - 50%));
-    }
-
-    .split-right .split-media {
-        margin-left: 0;
-        margin-right: calc(-50vw + 50%);
-        width: calc(100% + (50vw - 50%));
-    }
-
-    .split-left .split-media img,
-    .split-right .split-media img {
-        width: 100%;
-        height: 420px;
-    }
-
-    .flavours {
-        padding-top: 30px;
-        padding-bottom: 0;
-    }
-
-    .flavours .section-title {
-        font-size: 34px;
-        padding-bottom: 24px;
-    }
-
-    .card {
-        margin-bottom: 28px;
-    }
-
-    .card-img {
-        width: 220px;
-        height: 320px;
-        border-radius: 24px;
-        margin-bottom: 16px;
-    }
-
-    .card h3 {
-        font-size: 30px;
-        margin-bottom: 12px;
-    }
-
-    .card p {
-        width: 240px;
-        font-size: 14px;
-        padding: 0;
-        background: none;
-        color: #ec0909;
-        border-radius: 0;
-        text-align: center;
-    }
-
-    .btn {
-        font-size: 24px;
-        padding: 14px 34px;
-    }
-
-    .note {
-        font-size: 14px;
-    }
-
-    .signup-top {
-        padding-bottom: 20px;
-    }
-
-    .signup-top h2 {
-        font-size: 34px;
-        margin-bottom: 10px;
-    }
-
-    .signup-top p {
-        font-size: 14px;
-    }
-
-    .form-box {
-        width: 100%;
-        max-width: none;
-        margin: 0;
-        height: auto;
-        padding: 20px 24px 24px 24px;
-    }
-
-    .form-box h3 {
-        font-size: 28px;
-        padding: 0 0 16px 0;
-    }
-
-    .form {
-        padding: 0;
-    }
-
-    .form label {
-        font-size: 14px;
-        margin-bottom: 6px;
-    }
-
-    .form input {
-        font-size: 15px;
-        padding: 12px;
-        margin-bottom: 16px;
-    }
-
-    .footer {
-        text-align: left;
-        padding-top: 28px;
-        padding-bottom: 18px;
-    }
-
-    .footer-logo {
-        width: 120px;
-        margin: 0;
-        justify-self: start;
-        align-self: start;
-    }
-
-    .footer-nav {
-        justify-self: center;
-    }
-
-    .footer-nav ul {
-        margin: 0;
-    }
-
-    .footer-nav li {
-        margin-bottom: 10px;
-    }
-
-    .footer-nav a {
-        font-size: 20px;
-    }
-
-    .social {
-        flex-direction: column;
-        justify-self: end;
-        align-items: flex-start;
-        gap: 18px;
-        margin-bottom: 0;
-    }
-
-    .social-link {
-        justify-content: flex-start;
-        gap: 10px;
-    }
-
-    .social-link span {
-        display: inline;
-        font-size: 16px;
-        font-weight: 700;
-    }
-
-    .social-icon img,
-    .social-link img {
-        width: 32px;
-    }
-
-    .copyright {
-        font-size: 11px;
-        margin-top: 12px;
-    }
-}
-
-@media screen and (min-width: 1200px) {
-    .header-grid {
-        padding-top: 16px;
-        padding-bottom: 16px;
-    }
-
-    .logo {
-        width: 76px;
-        margin: 0;
-    }
-
-    .menu ul {
-        gap: 44px;
-    }
-
-    .menu a {
         font-size: 20px;
     }
 
@@ -647,10 +479,12 @@ a {
 
     .intro-logo {
         width: 130px;
+        margin-bottom: 14px;
     }
 
     .intro h2 {
         font-size: 48px;
+        margin-bottom: 10px;
     }
 
     .intro p {
@@ -662,9 +496,18 @@ a {
         padding: 30px 30px 22px 30px;
     }
 
+    .split-grid {
+        align-items: stretch;
+    }
+
     .split-copy {
+        min-height: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
         padding: 38px 30px;
-        height: 500px;
     }
 
     .split-copy p {
@@ -673,18 +516,22 @@ a {
         margin-bottom: 22px;
     }
 
+    .split-copy .btn {
+        margin: 0;
+        width: fit-content;
+    }
+
     .split-media {
-        height: 500px;
+        min-height: 500px;
+        height: 100%;
     }
 
     .split-left .split-media {
         margin-left: calc(-50vw + 50%);
-        margin-right: 0;
         width: calc(100% + (50vw - 50%));
     }
 
     .split-right .split-media {
-        margin-left: 0;
         margin-right: calc(-50vw + 50%);
         width: calc(100% + (50vw - 50%));
     }
@@ -692,7 +539,9 @@ a {
     .split-left .split-media img,
     .split-right .split-media img {
         width: 100%;
-        height: 500px;
+        height: 100%;
+        max-height: 500px;
+        object-fit: contain;
     }
 
     .flavours {
@@ -704,14 +553,20 @@ a {
         padding-bottom: 28px;
     }
 
+    .card {
+        margin-bottom: 28px;
+    }
+
     .card-img {
         width: 250px;
         height: 360px;
         border-radius: 28px;
+        margin-bottom: 16px;
     }
 
     .card h3 {
         font-size: 40px;
+        margin-bottom: 12px;
     }
 
     .card p {
@@ -743,6 +598,7 @@ a {
 
     .signup-top h2 {
         font-size: 42px;
+        margin-bottom: 10px;
     }
 
     .signup-top p {
@@ -762,12 +618,9 @@ a {
         padding: 0 0 18px 0;
     }
 
-    .form {
-        padding: 0;
-    }
-
     .form label {
         font-size: 16px;
+        margin-bottom: 6px;
     }
 
     .form input {
@@ -776,12 +629,28 @@ a {
     }
 
     .footer {
+        text-align: left;
         padding-top: 30px;
         padding-bottom: 20px;
     }
 
     .footer-logo {
         width: 140px;
+        margin: 0;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .footer-nav {
+        justify-self: center;
+    }
+
+    .footer-nav ul {
+        margin: 0;
+    }
+
+    .footer-nav li {
+        margin-bottom: 10px;
     }
 
     .footer-nav a {
@@ -789,11 +658,22 @@ a {
     }
 
     .social {
+        flex-direction: column;
+        justify-self: end;
+        align-items: flex-start;
         gap: 22px;
+        margin-bottom: 0;
+    }
+
+    .social-link {
+        justify-content: flex-start;
+        gap: 10px;
     }
 
     .social-link span {
+        display: inline;
         font-size: 18px;
+        font-weight: 700;
     }
 
     .social-icon img,
@@ -804,5 +684,59 @@ a {
     .copyright {
         font-size: 12px;
         margin-top: 16px;
+    }
+
+    .about-video-section {
+        padding-top: 34px;
+        padding-bottom: 38px;
+    }
+
+    .about-video video {
+        max-height: 650px;
+        object-fit: cover;
+    }
+
+    .contact-info {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .contact-info-copy h2 {
+        font-size: 28px;
+        margin-bottom: 14px;
+    }
+
+    .contact-info-copy p {
+        font-size: 15px;
+        margin-bottom: 8px;
+    }
+
+    .contact-form-section {
+        padding-top: 0;
+        padding-bottom: 34px;
+    }
+
+    .contact-form-box {
+        padding: 0 0 28px 0;
+        background-color: transparent;
+    }
+
+    .contact-form-box h3 {
+        background-color: #ec0909;
+        color: #ffffff;
+        padding: 14px 16px;
+        margin: 0;
+        font-size: 24px;
+    }
+
+    .contact-form {
+        background-color: #ec0909;
+        padding: 0 8px 8px 8px;
+    }
+
+    .contact-form textarea {
+        min-height: 230px;
+        font-size: 16px;
+        padding: 14px;
     }
 }
