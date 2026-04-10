@@ -1,0 +1,808 @@
+body {
+    margin: 0;
+    font-family: "Bree Serif", serif;
+    background-color: #efefef;
+    color: #111111;
+    overflow-x: hidden;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+.header {
+    background-color: #ec0909;
+}
+
+.header-grid {
+    align-items: center;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.logo {
+    display: block;
+    width: 78px;
+    align-self: center;
+}
+
+.menu-btn {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 30px;
+    cursor: pointer;
+    justify-self: end;
+    align-self: center;
+    padding: 0;
+}
+
+.menu {
+    display: none;
+    margin-top: 12px;
+}
+
+.menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+}
+
+.menu a {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    padding: 12px 0;
+}
+
+.hero {
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+    background-color: #ec0909;
+}
+
+.hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+}
+
+.intro {
+    background-color: #efefef;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 20px;
+}
+
+.intro-logo {
+    width: 80px;
+    margin: 0 auto 10px auto;
+}
+
+.intro h2 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.intro p {
+    margin: 0;
+    font-size: 16px;
+    text-align: center;
+}
+
+.split-left,
+.split-right {
+    background-color: #ec0909;
+}
+
+.split-grid {
+    padding-bottom: 0;
+}
+
+.section-title {
+    background-color: #efefef;
+    color: #111111;
+    margin: 0;
+    padding: 16px 14px 12px 14px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.split-copy {
+    background-color: #ec0909;
+    color: #ffffff;
+    padding: 24px 18px;
+    text-align: center;
+}
+
+.split-copy p {
+    margin: 0 0 16px 0;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.split-copy .btn {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.split-media {
+    width: auto;
+    overflow: hidden;
+}
+
+.split-media img {
+    width: 100%;
+    max-width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background-color: #ec0909;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.flavours {
+    background-color: #efefef;
+    padding-top: 16px;
+    padding-bottom: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.flavours .section-title {
+    background-color: transparent;
+    padding: 0 0 14px 0;
+}
+
+.card {
+    margin-bottom: 18px;
+    text-align: center;
+}
+
+.card-img {
+    width: 160px;
+    height: 240px;
+    background-color: #cd0005;
+    border-radius: 18px;
+    margin: 0 auto 10px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.card-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.card h3 {
+    margin: 0 0 8px 0;
+    font-size: 20px;
+}
+
+.card p {
+    background: none;
+    color: #ec0909;
+    border-radius: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 180px;
+    font-size: 11px;
+    line-height: 1.5;
+    text-align: center;
+}
+
+.btn-wrap {
+    text-align: center;
+    margin: 4px 0 8px 0;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #ff2b06;
+    color: #ffffff;
+    padding: 12px 26px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    box-sizing: border-box;
+    transition: all 0.25s ease; 
+}
+
+.btn:hover {
+    transform: translateY(-4px);
+    background-color: #ff5a3a;   
+}
+.note {
+    background-color: #ec0909;
+    color: #ffffff;
+    text-align: center;
+    font-size: 12px;
+    width: 100%;
+    display: block;
+    margin: 0;
+    padding: 6px 0;
+    line-height: 1.2;
+}
+
+.signup {
+    background-color: #efefef;
+    padding-top: 14px;
+}
+
+.signup-top {
+    padding-bottom: 14px;
+}
+
+.signup-top h2 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+}
+
+.signup-top p {
+    margin: 0;
+    font-size: 8px;
+    line-height: 1.5;
+}
+
+.form-box {
+    background-color: #ec0909;
+    color: #ffffff;
+    padding: 20px 14px 16px 14px;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    align-self: stretch;
+}
+
+.form-box h3 {
+    margin: 0;
+    padding: 0 0 14px 0;
+    font-size: 18px;
+}
+
+.form {
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.form label {
+    display: block;
+    margin: 0 0 4px 0;
+    font-size: 10px;
+}
+
+.form input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 14px;
+    padding: 12px;
+    border: none;
+}
+
+.submit-btn {
+    display: block;
+    margin: 16px auto 0 auto;
+    width: fit-content;
+}
+
+.footer {
+    background-color: #7d2c2c;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 18px;
+    padding-bottom: 12px;
+}
+
+.footer-logo {
+    width: 110px;
+    margin: 0 auto 18px auto;
+}
+
+.footer-nav ul {
+    list-style: none;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+.footer-nav li {
+    margin-bottom: 12px;
+}
+
+.footer-nav a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-link span {
+    display: none;
+}
+
+.social-icon img,
+.social-link img {
+    width: 34px;
+    height: auto;
+}
+
+.copyright {
+    margin: 0;
+    font-size: 8px;
+    text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+    .header-grid {
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .logo {
+        width: 82px;
+        margin: 0;
+    }
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu {
+        display: block;
+        margin-top: 0;
+        align-self: center;
+    }
+
+    .menu ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 32px;
+    }
+
+    .menu li {
+        border-top: none;
+    }
+
+    .menu a {
+        padding: 0;
+        font-size: 18px;
+    }
+
+    .hero img {
+        height: 520px;
+        object-fit: cover;
+    }
+
+    .intro {
+        padding-top: 26px;
+        padding-bottom: 30px;
+    }
+
+    .intro-logo {
+        width: 110px;
+        margin-bottom: 14px;
+    }
+
+    .intro h2 {
+        font-size: 38px;
+        margin-bottom: 10px;
+    }
+
+    .intro p {
+        font-size: 24px;
+    }
+
+    .section-title {
+        font-size: 34px;
+        padding: 28px 24px 20px 24px;
+    }
+
+    .split-media,
+    .split-copy {
+        height: 420px;
+    }
+
+    .split-copy {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding: 28px 24px;
+    }
+
+    .split-copy p {
+        font-size: 14px;
+        margin-bottom: 18px;
+    }
+
+    .split-copy .btn {
+        margin: 0;
+        width: fit-content;
+    }
+
+    .split-left .split-media {
+        margin-left: calc(-50vw + 50%);
+        margin-right: 0;
+        width: calc(100% + (50vw - 50%));
+    }
+
+    .split-right .split-media {
+        margin-left: 0;
+        margin-right: calc(-50vw + 50%);
+        width: calc(100% + (50vw - 50%));
+    }
+
+    .split-left .split-media img,
+    .split-right .split-media img {
+        width: 100%;
+        height: 420px;
+    }
+
+    .flavours {
+        padding-top: 30px;
+        padding-bottom: 0;
+    }
+
+    .flavours .section-title {
+        font-size: 34px;
+        padding-bottom: 24px;
+    }
+
+    .card {
+        margin-bottom: 28px;
+    }
+
+    .card-img {
+        width: 220px;
+        height: 320px;
+        border-radius: 24px;
+        margin-bottom: 16px;
+    }
+
+    .card h3 {
+        font-size: 30px;
+        margin-bottom: 12px;
+    }
+
+    .card p {
+        width: 240px;
+        font-size: 14px;
+        padding: 0;
+        background: none;
+        color: #ec0909;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 24px;
+        padding: 14px 34px;
+    }
+
+    .note {
+        font-size: 14px;
+    }
+
+    .signup-top {
+        padding-bottom: 20px;
+    }
+
+    .signup-top h2 {
+        font-size: 34px;
+        margin-bottom: 10px;
+    }
+
+    .signup-top p {
+        font-size: 14px;
+    }
+
+    .form-box {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        height: auto;
+        padding: 20px 24px 24px 24px;
+    }
+
+    .form-box h3 {
+        font-size: 28px;
+        padding: 0 0 16px 0;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    .form label {
+        font-size: 14px;
+        margin-bottom: 6px;
+    }
+
+    .form input {
+        font-size: 15px;
+        padding: 12px;
+        margin-bottom: 16px;
+    }
+
+    .footer {
+        text-align: left;
+        padding-top: 28px;
+        padding-bottom: 18px;
+    }
+
+    .footer-logo {
+        width: 120px;
+        margin: 0;
+        justify-self: start;
+        align-self: start;
+    }
+
+    .footer-nav {
+        justify-self: center;
+    }
+
+    .footer-nav ul {
+        margin: 0;
+    }
+
+    .footer-nav li {
+        margin-bottom: 10px;
+    }
+
+    .footer-nav a {
+        font-size: 20px;
+    }
+
+    .social {
+        flex-direction: column;
+        justify-self: end;
+        align-items: flex-start;
+        gap: 18px;
+        margin-bottom: 0;
+    }
+
+    .social-link {
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .social-link span {
+        display: inline;
+        font-size: 16px;
+        font-weight: 700;
+    }
+
+    .social-icon img,
+    .social-link img {
+        width: 32px;
+    }
+
+    .copyright {
+        font-size: 11px;
+        margin-top: 12px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .header-grid {
+        padding-top: 16px;
+        padding-bottom: 16px;
+    }
+
+    .logo {
+        width: 76px;
+        margin: 0;
+    }
+
+    .menu ul {
+        gap: 44px;
+    }
+
+    .menu a {
+        font-size: 20px;
+    }
+
+    .hero img {
+        height: 650px;
+        object-fit: cover;
+    }
+
+    .intro {
+        padding-top: 34px;
+        padding-bottom: 34px;
+    }
+
+    .intro-logo {
+        width: 130px;
+    }
+
+    .intro h2 {
+        font-size: 48px;
+    }
+
+    .intro p {
+        font-size: 30px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        padding: 30px 30px 22px 30px;
+    }
+
+    .split-copy {
+        padding: 38px 30px;
+        height: 500px;
+    }
+
+    .split-copy p {
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 22px;
+    }
+
+    .split-media {
+        height: 500px;
+    }
+
+    .split-left .split-media {
+        margin-left: calc(-50vw + 50%);
+        margin-right: 0;
+        width: calc(100% + (50vw - 50%));
+    }
+
+    .split-right .split-media {
+        margin-left: 0;
+        margin-right: calc(-50vw + 50%);
+        width: calc(100% + (50vw - 50%));
+    }
+
+    .split-left .split-media img,
+    .split-right .split-media img {
+        width: 100%;
+        height: 500px;
+    }
+
+    .flavours {
+        padding-top: 36px;
+    }
+
+    .flavours .section-title {
+        font-size: 42px;
+        padding-bottom: 28px;
+    }
+
+    .card-img {
+        width: 250px;
+        height: 360px;
+        border-radius: 28px;
+    }
+
+    .card h3 {
+        font-size: 40px;
+    }
+
+    .card p {
+        width: 270px;
+        font-size: 15px;
+        padding: 0;
+        background: none;
+        color: #ec0909;
+        border-radius: 0;
+        text-align: center;
+    }
+
+    .btn {
+        font-size: 28px;
+        padding: 16px 40px;
+    }
+
+    .note {
+        font-size: 16px;
+    }
+
+    .signup {
+        padding-top: 24px;
+    }
+
+    .signup-top {
+        padding-bottom: 22px;
+    }
+
+    .signup-top h2 {
+        font-size: 42px;
+    }
+
+    .signup-top p {
+        font-size: 15px;
+    }
+
+    .form-box {
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        height: auto;
+        padding: 20px 30px 30px 30px;
+    }
+
+    .form-box h3 {
+        font-size: 34px;
+        padding: 0 0 18px 0;
+    }
+
+    .form {
+        padding: 0;
+    }
+
+    .form label {
+        font-size: 16px;
+    }
+
+    .form input {
+        font-size: 16px;
+        padding: 14px;
+    }
+
+    .footer {
+        padding-top: 30px;
+        padding-bottom: 20px;
+    }
+
+    .footer-logo {
+        width: 140px;
+    }
+
+    .footer-nav a {
+        font-size: 22px;
+    }
+
+    .social {
+        gap: 22px;
+    }
+
+    .social-link span {
+        font-size: 18px;
+    }
+
+    .social-icon img,
+    .social-link img {
+        width: 38px;
+    }
+
+    .copyright {
+        font-size: 12px;
+        margin-top: 16px;
+    }
+}
