@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Nut - Products</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link href="css/grid.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <h1 class="hidden">Dr. Nut Product Page</h1>
+
+    <header class="header">
+        <div class="grid-con center-grid-con header-grid">
+            <a href="index.html" class="logo col-start-1 col-end-3 m-col-start-1 m-col-end-3 l-col-start-1 l-col-end-3">
+                <img src="images/dr.nut-logo.png" alt="Dr. Nut logo">
+            </a>
+
+            <button class="menu-btn col-start-4 col-end-5" id="menuBtn" aria-expanded="false" aria-controls="menu">
+                <span class="hidden">Open navigation</span>
+                ☰
+            </button>
+
+            <nav class="menu col-span-full m-col-start-4 m-col-end-13 l-col-start-4 l-col-end-13" id="menu">
+                <h2 class="hidden">Main Navigation</h2>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2 class="hidden">Product Hero</h2>
+            <img src="images/dr-nut-producthero.png" alt="Dr. Nut bottles">
+        </section>
+
+        <section class="intro">
+            <div class="grid-con center-grid-con">
+                <img src="images/dr.nut-logo.png" alt="Dr. Nut logo badge" class="intro-logo col-start-2 col-end-4 m-col-start-5 m-col-end-9 l-col-start-5 l-col-end-9">
+                <h2 class="col-span-full">Our Products</h2>
+            </div>
+        </section>
+
+        <section class="product-info">
+            <div class="grid-con center-grid-con">
+                <div class="product-info-copy col-span-full">
+                    <p>Dr. Nut has changed a lot over the years.<br>Take a look at our new changes!</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="product-flavours">
+            <div class="grid-con center-grid-con flavours-grid">
+
+                <article class="prod-card col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-6">
+                    <div class="prod-card-img">
+                        <img src="images/dr-nut-classic-product.png" alt="Classic Dr. Nut bottle">
+                    </div>
+                    <h3 >Classic Dr. Nut</h3>
+                    <p>
+                        Brought to you since our debut, the classic, unique, and remembered Dr. Nut original flavour is available, always.
+                    </p>
+                </article>
+
+                <article class="prod-card col-span-full m-col-start-2 m-col-end-12 l-col-start-8 l-col-end-12">
+                    <div class="prod-card-img">
+                        <img src="images/dr-nut-diet-product.png" alt="Diet Dr. Nut bottle">
+                    </div>
+                    <h3>Diet Dr. Nut</h3>
+                    <p>
+                        For our zero-calorie fans, Dr. Nut now comes in zero-sugar, and zero-caffeine. This new flavour will be sure to give the same nutty taste as the original flavour.
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <div id="upcoming-overlay">
+            <p>Coming Soon...</p>
+        </div>
+
+        <section class="upcoming-product-flavours">
+            <div class="grid-con center-grid-con flavours-grid">
+
+                <article class="upcoming-card col-span-full m-col-start-2 m-col-end-12 l-col-start-2 l-col-end-6">
+                    <div class="upcoming-card-img">
+                        <img src="images/dr-nut-unknown-product.png" alt="Upcoming Dr. Nut bottle">
+                    </div>
+                    <h3>???</h3>
+                    <p>
+                        This Dr. Nut flavour has not been released yet. Stay tuned!
+                </article>
+
+                <article class="upcoming-card col-span-full m-col-start-2 m-col-end-12 l-col-start-8 l-col-end-12">
+                    <div class="upcoming-card-img">
+                        <img src="images/dr-nut-unknown-product.png" alt="Upcoming Dr. Nut bottle">
+                    </div>
+                    <h3>???</h3>
+                    <p>
+                        This Dr. Nut flavour has not been released yet. Stay tuned!
+                    </p>
+                </article>
+
+            </div>
+
+        </section>
+
+        <article>
+            <div class="grid-con center-grid-con">
+                <div class="product-notice col-span-full">
+                    <p>Dr. Nut is fully committed to ensuring that each drink is made with care,<br>and our patrons are not left unsatisfied.</p>
+                </div>
+            </div>
+        </article>
+
+        <section class="signup">
+            <div class="grid-con center-grid-con signup-grid">
+                <div class="signup-top col-span-full">
+                    <h2>Sign Up For the Newsletter!</h2>
+                    <p>
+                        Join the Dr. Nut community and stay up to date on promotions, news,
+                        and any new updates on your favourite drink, Dr. Nut!
+                    </p>
+                </div>
+
+                <div class="form-box col-span-full">
+                    <h3>Fill in your info below:</h3>
+
+                    <form class="form" action="#" method="post">
+                        <label for="newsletter-name">Full Name:</label>
+                        <input type="text" id="newsletter-name" name="newsletter-name">
+
+                        <label for="newsletter-phone">Phone Number:</label>
+                        <input type="tel" id="newsletter-phone" name="newsletter-phone">
+
+                        <label for="newsletter-email">Email:</label>
+                        <input type="email" id="newsletter-email" name="newsletter-email">
+
+                        <button type="submit" class="btn submit-btn">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="grid-con center-grid-con footer-grid">
+            <div class="footer-logo col-span-full m-col-start-1 m-col-end-4 l-col-start-1 l-col-end-4">
+                <img src="images/dr.nut-logo.png" alt="Dr. Nut footer logo">
+            </div>
+
+            <nav class="footer-nav col-span-full m-col-start-5 m-col-end-8 l-col-start-5 l-col-end-8">
+                <h2 class="hidden">Footer Navigation</h2>
+                <ul>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="locations.html">Locations</a></li>
+                    <li><a href="photos.html">Photos</a></li>
+                </ul>
+            </nav>
+
+            <section class="social col-span-full m-col-start-9 m-col-end-13 l-col-start-9 l-col-end-13">
+                <h2 class="hidden">Social Media</h2>
+
+                <div class="social-link">
+                    <a href="#" class="social-icon">
+                        <img src="images/insta-logo.png" alt="Instagram icon">
+                    </a>
+                    <span>@drnut</span>
+                </div>
+
+                <div class="social-link">
+                    <a href="#" class="social-icon">
+                        <img src="images/fb-logo.png" alt="Facebook icon">
+                    </a>
+                    <span>/drnut</span>
+                </div>
+
+                <div class="social-link">
+                    <a href="#" class="social-icon">
+                        <img src="images/x-logo.png" alt="X icon">
+                    </a>
+                    <span>@drnut</span>
+                </div>
+            </section>
+
+            <p class="copyright col-span-full">&copy; Dr. Nut, 2026, All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
