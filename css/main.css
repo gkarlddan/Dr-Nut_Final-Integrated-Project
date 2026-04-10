@@ -1,3 +1,5 @@
+/* Styles & Homepage */
+
 body {
     margin: 0;
     font-family: "Bree Serif", serif;
@@ -370,6 +372,8 @@ a {
     text-align: center;
 }
 
+/* About Page */
+
 .about-video-section {
     background-color: #efefef;
     padding-top: 20px;
@@ -387,6 +391,8 @@ a {
     width: 100%;
     height: auto;
 }
+
+/* Contact Page */
 
 .contact-info {
     background-color: #efefef;
@@ -429,6 +435,8 @@ a {
     resize: none;
     font-family: "Bree Serif", serif;
 }
+
+/* Products Page */
 
 .product-info {
     background-color: #efefef;
@@ -574,6 +582,123 @@ a {
     line-height: 1.5;
     text-align: center;
 }
+
+/* Photos Page */
+
+.photo-info {
+    background-color: #efefef;
+    border-top: 4px solid #ec0909;
+    padding-top: 18px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.photo-info-copy h2 {
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.photo-info-copy p {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.photo-heading-title {
+    background-color: #FF0000;
+    color: #efefef;
+    border: solid 5px #FF0000;
+    border-radius: 15px;
+    margin: 0 auto auto auto;
+    padding: 16px 0 12px 0;
+    font-size: 16px;
+    text-align: center;
+    width: 575px;
+}
+
+.photo-heading-logo {
+    display: none;
+}
+
+.photo-history-img {
+    justify-content: center;
+    margin: auto auto 0 auto;
+    width: 575px;
+    background-color: #FF0000;
+    border: solid 25px #FF0000;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+.photo-history-text {
+    margin: 25px auto;
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.5;
+    z-index: -2;
+}
+
+#section-separator {
+    position: relative;
+    justify-self: center;
+    align-items: center;
+    margin: 50px auto 25px auto;
+    width: 2400px;
+    height: 100px;
+    background-color: #FFC7C7;
+}
+
+.photo-card-img-1 {
+    width: 500px;
+    height: 680px;
+    background-color: #700000;
+    border-radius: 50px;
+    margin: 75px auto 10px auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo-card-img-2 {
+    position: relative;
+    width: 500px;
+    height: 680px;
+    background-color: #700000;
+    border-radius: 50px;
+    margin: 75px auto 10px auto;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.photo-upnext-img {
+    margin: 0 auto 0 auto;
+    width: 575px;
+    object-fit: contain;
+    background-color: #FF0000;
+    border: solid 25px #FF0000;
+    border-radius: 25px;
+}
+
+.photo-upnext-text {
+    margin: 50px auto;
+    text-align: center;
+    width: 500px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.photo-upnext-text p:last-child {
+    position: absolute;
+    margin: 165px 0;
+    text-align: center;
+    width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+/* Desktop Layout */
 
 @media screen and (min-width: 1200px) {
     .header-grid {
@@ -1021,5 +1146,126 @@ a {
         line-height: 1.5;
         text-align: center;
     }
+
+    .photo-info {
+        background-color: #efefef;
+        border-top: 4px solid #ec0909;
+        padding-top: 18px;
+        padding-bottom: 18px;
+        text-align: center;
+}
+
+    .photo-info-copy h2 {
+        margin: 0 0 12px 0;
+        font-size: 18px;
+        line-height: 1.4;
+    }
+
+    .photo-info-copy p {
+        margin: 0 0 6px 0;
+        font-size: 24px;
+        line-height: 1.5;
+    }
+
+    .photo-heading-title {
+        background-color: #FF0000;
+        color: #efefef;
+        border: solid 5px #FF0000;
+        border-radius: 15px;
+        margin: 0;
+        padding: 13px 16px 12px 300px;
+        font-size: 32px;
+        text-align: center;
+        width: 1200px;
+    }
+
+    .photo-heading-logo {
+        display: block;
+        position: absolute;
+        width: 150px;
+        margin: -20px auto 0 1000px;
+    }
+
+    .photo-history-img {
+        margin: -100px 675px 0 auto;
+        width: 500px;
+        background-color: #FF0000;
+        border: solid 25px #FF0000;
+        border-radius: 25px;
+        z-index: 1;
+    }
+
+    .photo-history-text {
+        position: absolute;
+        margin: 115px 525px;
+        text-align: center;
+        width: 600px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    #section-separator {
+        position: relative;
+        justify-self: center;
+        align-items: center;
+        margin: 50px auto 25px auto;
+        width: 2400px;
+        height: 100px;
+        background-color: #FFC7C7;
+    }
+
+    .photo-card-img-1 {
+        width: 500px;
+        height: 680px;
+        background-color: #700000;
+        border-radius: 50px;
+        margin: 75px auto 10px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .photo-card-img-2 {
+        position: relative;
+        width: 500px;
+        height: 680px;
+        background-color: #700000;
+        border-radius: 50px;
+        margin: 75px auto 30px 550px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+    .photo-upnext-img {
+        margin: -100px auto 0 0;
+        width: 500px;
+        object-fit: contain;
+        background-color: #FF0000;
+        border: solid 25px #FF0000;
+        border-radius: 25px;
+    }
+
+    .photo-upnext-text {
+        position: absolute;
+        margin: 125px 525px;
+        text-align: center;
+        width: 600px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .photo-upnext-text p:last-child {
+        position: absolute;
+        margin: 165px 0;
+        text-align: center;
+        width: 600px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
 
 }
