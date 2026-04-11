@@ -698,6 +698,92 @@ a {
     line-height: 1.5;
 }
 
+/* Locations Page */
+
+.locate-info {
+    background-color: #efefef;
+    border-top: 4px solid #ec0909;
+    padding-top: 18px;
+    padding-bottom: 18px;
+    text-align: center;
+}
+
+.locate-info-copy h2 {
+    margin: 0 0 12px 0;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.locate-info-copy p {
+    margin: 0 0 6px 0;
+    font-size: 24px;
+    line-height: 1.5;
+}
+
+.locate-map-img {
+    justify-content: center;
+    margin: auto auto 0 auto;
+    width: 575px;
+    background-color: #FF0000;
+    border: solid 25px #FF0000;
+    border-radius: 25px;
+    z-index: -1;
+}
+
+.locate-map-img img {
+    border-radius: 25px;
+}
+
+.locate-heading-graphic {
+    background-color: #FF0000;
+    color: #efefef;
+    border: solid 1px #FF0000;
+    border-radius: 15px;
+    margin: 15px auto 15px auto;
+    padding: 16px 0 5px 0;
+    text-align: center;
+    width: 575px;
+}
+
+.store-list {
+    background-color: #efefef;
+    padding-top: 16px;
+    padding-bottom: 0;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.store-box {
+    display: block;
+    background-color: #D12727;
+    color: #ffffff;
+    width: 600px;
+    border-radius: 0;
+    margin: 0 auto 18px auto;
+    padding: 16px;
+    
+}
+
+.store-icon {
+    margin: 0 auto;
+    width: 126px;
+    margin-bottom: 25px;
+}
+
+.store-name {
+    margin: 0;
+    font-size: 36px;
+    text-align: center;
+}
+
+.store-notice {
+    margin: 25px auto;
+    padding-bottom: 25px;
+    font-size: 18px;
+    line-height: 1.5;
+    text-align: center;
+}
+
 /* Desktop Layout */
 
 @media screen and (min-width: 1200px) {
