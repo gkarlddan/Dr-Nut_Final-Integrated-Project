@@ -1,3 +1,5 @@
+/* Styles & Homepage */
+
 body {
     margin: 0;
     font-family: "Bree Serif", serif;
@@ -370,6 +372,8 @@ a {
     text-align: center;
 }
 
+/* About Page */
+
 .about-video-section {
     background-color: #efefef;
     padding-top: 20px;
@@ -387,6 +391,8 @@ a {
     width: 100%;
     height: auto;
 }
+
+/* Contact Page */
 
 .contact-info {
     background-color: #efefef;
@@ -429,6 +435,8 @@ a {
     resize: none;
     font-family: "Bree Serif", serif;
 }
+
+/* Products Page */
 
 .product-info {
     background-color: #efefef;
@@ -1345,91 +1353,5 @@ a {
         line-height: 1.5;
     }
 
-    .locate-info {
-        background-color: #efefef;
-        border-top: 4px solid #ec0909;
-        padding-top: 18px;
-        padding-bottom: 18px;
-        text-align: center;
-    }
-
-    .locate-info-copy h2 {
-        margin: 0 0 12px 0;
-        font-size: 18px;
-        line-height: 1.4;
-    }
-
-    .locate-info-copy p {
-        margin: 0 0 6px 0;
-        font-size: 24px;
-        line-height: 1.5;
-    }
-
-    .locate-map-img {
-        justify-content: center;
-        margin: auto auto 0 auto;
-        width: 800px;
-        background-color: #FF0000;
-        border: solid 25px #FF0000;
-        border-radius: 25px;
-        z-index: -1;
-    }
-
-    .locate-map-img img {
-        border-radius: 25px;
-    }
-
-    .locate-heading-graphic {
-        background-color: #FF0000;
-        color: #efefef;
-        border: solid 1px #FF0000;
-        border-radius: 15px;
-        margin: 15px auto 15px auto;
-        padding: 16px 0 15px 0;
-        text-align: center;
-        width: 800px;
-    }
-
-    .store-list {
-        background-color: #efefef;
-        padding-top: 16px;
-        padding-bottom: 0;
-        text-align: center;
-        margin-bottom: 0;
-    }
-
-    .store-box {
-        display: block;
-        background-color: #D12727;
-        color: #ffffff;
-        width: 1200px;
-        height: 200px;
-        border-radius: 0;
-        margin: 0 auto 14px auto;
-        padding: 16px;
-        
-    }
-
-    .store-icon {
-        display: inline;
-        margin: 15px auto auto 25px;
-        width: 126px;
-        margin-bottom: 0;
-    }
-
-    .store-name {
-        display: absolute;
-        margin: -115px auto 0 215px;
-        font-size: 64px;
-        text-align: left;
-    }
-
-    .store-notice {
-        margin: 25px auto;
-        padding-bottom: 25px;
-        font-size: 24px;
-        line-height: 1.5;
-        text-align: center;
-    }
 
 }
